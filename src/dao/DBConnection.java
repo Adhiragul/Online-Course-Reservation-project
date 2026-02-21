@@ -6,9 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    // ──────────────────────────────────────────────
-    //  Update these constants to match your MySQL setup
-    // ──────────────────────────────────────────────
+
     private static final String URL  = "jdbc:mysql://localhost:3306/course_reservation_db";
     private static final String USER = "root";
     private static final String PASS = "root";   // change to your MySQL password
