@@ -14,10 +14,6 @@ import java.awt.*;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Main dashboard shown after login.
- * Displays available courses and the student's reservations.
- */
 public class DashboardPanel extends JPanel {
 
     private final MainFrame frame;
