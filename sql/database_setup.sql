@@ -48,11 +48,12 @@ CREATE TABLE IF NOT EXISTS reservations (
 --  Seed Data — Sample Courses
 -- ─────────────────────────────────────────────────
 INSERT INTO courses (title, instructor, capacity, enrolled_count) VALUES
-    ('Introduction to Java',           'Dr. James Gosling',    40, 12),
-    ('Data Structures & Algorithms',   'Prof. Robert Sedgewick', 35, 20),
-    ('Web Development with Spring',    'Ms. Sarah Connor',     30,  5),
-    ('Database Management Systems',    'Dr. Edgar Codd',       25, 10),
-    ('Machine Learning Fundamentals',  'Prof. Andrew Ng',      50, 45),
-    ('Cloud Computing with AWS',       'Mr. Jeff Barr',        30,  8);
+    ('Introduction to Java',           'Dr. Iron Man', 40, 12),
+    ('Data Structures & Algorithms',   'Dr. Johnwick', 35, 20),
+    ('Web Development with Spring',    'Ms. Black widow', 30,  5),
+    ('Database Management Systems',    'Dr. Captain America', 25, 10),
+    ('Machine Learning Fundamentals',  'Prof. Andrew Tate', 50, 45),
+    ('Cloud Computing with AWS',       'Mr. Jeff Buzzoff', 30,  8);
 
 SELECT 'Database setup complete! 6 sample courses inserted.' AS Status;
+
