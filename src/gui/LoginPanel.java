@@ -7,9 +7,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.SQLException;
 
-/**
- * Login screen with email and password fields.
- */
+
 public class LoginPanel extends JPanel {
 
     private final MainFrame frame;
@@ -35,7 +33,7 @@ public class LoginPanel extends JPanel {
                 BorderFactory.createLineBorder(MainFrame.BORDER, 1),
                 BorderFactory.createEmptyBorder(40, 50, 40, 50)));
 
-        // ── Icon / Logo ──
+
         JLabel iconLabel = new JLabel("OCRS", SwingConstants.CENTER);
         iconLabel.setFont(new Font("Segoe UI", Font.BOLD, 36));
         iconLabel.setForeground(MainFrame.ACCENT);
@@ -43,7 +41,7 @@ public class LoginPanel extends JPanel {
         card.add(iconLabel);
         card.add(Box.createVerticalStrut(10));
 
-        // ── Title ──
+
         JLabel title = new JLabel("Welcome Back");
         title.setFont(MainFrame.FONT_TITLE);
         title.setForeground(MainFrame.TEXT_PRIMARY);
@@ -57,7 +55,6 @@ public class LoginPanel extends JPanel {
         card.add(subtitle);
         card.add(Box.createVerticalStrut(30));
 
-        // ── Email ──
         JLabel emailLbl = MainFrame.createLabel("EMAIL");
         emailLbl.setAlignmentX(Component.LEFT_ALIGNMENT);
         card.add(emailLbl);
@@ -69,7 +66,7 @@ public class LoginPanel extends JPanel {
         card.add(emailField);
         card.add(Box.createVerticalStrut(18));
 
-        // ── Password ──
+
         JLabel passLbl = MainFrame.createLabel("PASSWORD");
         passLbl.setAlignmentX(Component.LEFT_ALIGNMENT);
         card.add(passLbl);
@@ -81,7 +78,7 @@ public class LoginPanel extends JPanel {
         card.add(passwordField);
         card.add(Box.createVerticalStrut(8));
 
-        // ── Status label ──
+
         statusLabel = new JLabel(" ");
         statusLabel.setFont(MainFrame.FONT_LINK);
         statusLabel.setForeground(MainFrame.DANGER);
@@ -89,7 +86,7 @@ public class LoginPanel extends JPanel {
         card.add(statusLabel);
         card.add(Box.createVerticalStrut(14));
 
-        // ── Login button ──
+        
         JButton loginBtn = MainFrame.createStyledButton("Sign In", MainFrame.ACCENT);
         loginBtn.setMaximumSize(new Dimension(Integer.MAX_VALUE, 42));
         loginBtn.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -97,7 +94,7 @@ public class LoginPanel extends JPanel {
         card.add(loginBtn);
         card.add(Box.createVerticalStrut(20));
 
-        // ── Register link ──
+   
         JLabel registerLink = new JLabel("Don't have an account?  Register here");
         registerLink.setFont(MainFrame.FONT_LINK);
         registerLink.setForeground(MainFrame.ACCENT);
@@ -118,7 +115,7 @@ public class LoginPanel extends JPanel {
         });
         card.add(registerLink);
 
-        // allow pressing Enter to login
+
         passwordField.addActionListener(e -> handleLogin());
         emailField.addActionListener(e -> passwordField.requestFocus());
 
