@@ -5,10 +5,7 @@ import model.Student;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * Top-level application window using CardLayout to switch between
- * Login, Register, and Dashboard panels.
- */
+
 public class MainFrame extends JFrame {
 
     // ── Color Palette (Dark Theme) ──────────────────────────
